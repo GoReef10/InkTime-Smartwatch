@@ -39,12 +39,12 @@ InkTime is an open source startup focused on developing an affordable and custom
 | 0201N101F160CT | 100 pF | 1 | C11 | [JLCPCB](https://jlcpcb.com/partdetail/Walsin_TechCorp-0201N101F160CT/C3847857) | [Datasheet](https://www.lcsc.com/datasheet/C3847857.pdf) |
 | C0201X5R473K160NTA | 47 nF | 1 | C16 | [JLCPCB](https://jlcpcb.com/partdetail/126083-C0201X5R473K160NTA/C124806) | [Datasheet](https://www.lcsc.com/datasheet/C124806.pdf) |
 | AC0201KRX6S6BB104 | 100 nF | 9 | C5, C7, C8, C12, C19, C23, C27, C34, C42 | [JLCPCB](https://jlcpcb.com/partdetail/YAGEO-AC0201KRX6S6BB104/C3855913) | [Datasheet](https://www.lcsc.com/datasheet/C3855913.pdf) |
-| CL05A105KP5NNNC | 1 µF | 1 | C15 | [JLCPCB](https://jlcpcb.com/partdetail/C14445) | [Datasheet](https://www.lcsc.com/datasheet/C14445.pdf) |
-| GRM155R61H105KE05D | 1 µF / 50V | 9 | EPD_C1, EPD_C2, EPD_C6, EPD_C7, EPD_C8, EPD_C9, EPD_C10, EPD_C11, EPD_C12 | [JLCPCB](https://jlcpcb.com/partdetail/1609005-GRM155R61H105KE05D/C1518208) | [Datasheet](https://www.lcsc.com/datasheet/C1518208.pdf) |
-| GRM155R61A475KEAAD | 4.7 µF | 5 | C6, C14, C20, C21, C43 | [JLCPCB](https://jlcpcb.com/partdetail/MurataElectronics-GRM155R61A475KEAAD/C77004) | [Datasheet](https://www.lcsc.com/datasheet/C77004.pdf) |
-| C0402X5R475M250NT | 4.7 µF / 25V | 1 | C2-EP-DR | [JLCPCB](https://jlcpcb.com/partdetail/SANYEAR-C0402X5R475M250NT/C2911388) | [Datasheet](https://www.lcsc.com/datasheet/C2911388.pdf) |
-| 0402X106M100CT | 10 µF | 2 | C24, C39 | [JLCPCB](https://jlcpcb.com/partdetail/Walsin_TechCorp-0402X106M100CT/C2992625) | [Datasheet](https://www.lcsc.com/datasheet/C2992625.pdf) |
-| CL05A226MQ6ZUN8 | 22 µF | 2 | C25, C33 | [JLCPCB](https://jlcpcb.com/partdetail/2889851-CL05A226MQ6ZUN8/C2762589) | [Datasheet](https://www.lcsc.com/datasheet/C2762589.pdf) |
+| CL05A105KP5NNNC | 1 uF | 1 | C15 | [JLCPCB](https://jlcpcb.com/partdetail/C14445) | [Datasheet](https://www.lcsc.com/datasheet/C14445.pdf) |
+| GRM155R61H105KE05D | 1 uF / 50V | 9 | EPD_C1, EPD_C2, EPD_C6, EPD_C7, EPD_C8, EPD_C9, EPD_C10, EPD_C11, EPD_C12 | [JLCPCB](https://jlcpcb.com/partdetail/1609005-GRM155R61H105KE05D/C1518208) | [Datasheet](https://www.lcsc.com/datasheet/C1518208.pdf) |
+| GRM155R61A475KEAAD | 4.7 uF | 5 | C6, C14, C20, C21, C43 | [JLCPCB](https://jlcpcb.com/partdetail/MurataElectronics-GRM155R61A475KEAAD/C77004) | [Datasheet](https://www.lcsc.com/datasheet/C77004.pdf) |
+| C0402X5R475M250NT | 4.7 uF / 25V | 1 | C2-EP-DR | [JLCPCB](https://jlcpcb.com/partdetail/SANYEAR-C0402X5R475M250NT/C2911388) | [Datasheet](https://www.lcsc.com/datasheet/C2911388.pdf) |
+| 0402X106M100CT | 10 uF | 2 | C24, C39 | [JLCPCB](https://jlcpcb.com/partdetail/Walsin_TechCorp-0402X106M100CT/C2992625) | [Datasheet](https://www.lcsc.com/datasheet/C2992625.pdf) |
+| CL05A226MQ6ZUN8 | 22 uF | 2 | C25, C33 | [JLCPCB](https://jlcpcb.com/partdetail/2889851-CL05A226MQ6ZUN8/C2762589) | [Datasheet](https://www.lcsc.com/datasheet/C2762589.pdf) |
 
 ## Hardware Description
 
@@ -55,7 +55,7 @@ The core of InkTime is the **nRF52840**. It manages all peripherals and runs the
 ### Power System
 
 - **LiPo Charger - BQ25180YBGR :** Single-cell Li-Ion/LiPo charger connected via **I2C**, handles charge current control and power path management.
-- **DC/DC Buck-Boost - RT6160AWSC:** Provides the regulated **3.3 V rail** (VREG/3V3) from the battery, using a 10 µH inductor. Supplies the MCU and most peripherals.
+- **DC/DC Buck-Boost - RT6160AWSC:** Provides the regulated **3.3 V rail** (VREG/3V3) from the battery, using a 10 uH inductor. Supplies the MCU and most peripherals.
 - **Fuel Gauge - MAX17048G+T10:** Monitors battery state-of-charge via **I2C**, provides a `ALERT` line to the MCU for low-battery interrupts.
 
 ### E-Paper Display
